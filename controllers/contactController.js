@@ -20,7 +20,7 @@ export const submitContact = async (req, res) => {
     });
 
     const mailOptions = {
-      from: '"Brivin Contact Form" <noreply@brivin.com>',
+      from: email,
       to: "brivin.int@gmail.com", // Replace with your testing email
       subject: "New Contact Form Submission",
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
