@@ -8,7 +8,16 @@ dotenv.config()
 
 const app = express()
 
-app.use(cors({ origin: "*" }))
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:5174",
+      "https://brivin-ad8a5.web.app",
+    ],
+    credentials: true,
+  })
+);
 app.use(express.json())
 
 mongoose.connect(process.env.MONGODB_URI)
