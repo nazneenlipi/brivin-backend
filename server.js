@@ -30,3 +30,7 @@ app.use("/api", contactRoutes)
 const PORT = process.env.PORT || 7000
 app.listen(PORT, () => console.log(`Server brivin running on port ${PORT}`))
 
+
+app.get("/", (req, res) => {
+  res.send("Welcome to Brivin and thank you users");
+});
