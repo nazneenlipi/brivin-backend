@@ -16,6 +16,7 @@ app.use(
       "http://localhost:5174",
       "https://brivin-ad8a5.web.app",
       "https://briv-in.vercel.app",
+      "https://www.brivinint.com",
     ],
     credentials: true,
   })
